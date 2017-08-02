@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+		<!-- A-Frame libraries -->
+		<script language="javascript" type="text/javascript" src="libraries/aframe.min.js"></script>
+
+		<!-- AFrameP5 library -->
+		<script language="javascript" type="text/javascript" src="libraries/aframep5.js"></script>
+    
+    <script src="sketch.js" type="text/javascript"></script>
+
+    <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
+  </head>
+  <body>
+    <!-- container to hold our VR scene - make sure to give this element an ID of 'VRScene' -->	
+	    <a-scene id="VRScene">
+
+	    	<!-- 
+		       The 'a-assets' container is used to load in any external artwork you may want to use as "textures" for your objects.
+		       Ensure that this element has an ID of 'VRAssets'
+		       
+		       Textures can be loaded by creating a new 'a-asset' tag inside of the 'a-assets' container.
+		       When doing this you will need to make sure to give your textures a unique ID - 
+		       this will be used by p5 to create new objects.
+		       
+		       Example:
+		       
+		       <img id="ITEM_ID_GOES_HERE" src="images/gold_block.png"></asset-item>		       
+			-->
+	      
+			<a-assets id="VRAssets">
+			  <img id="suballerina1" src="images/suballerina1.png"/>
+			  <img id="suballerina2" src="images/suballerina2.png"/>
+			  <img id="suballerina3" src="images/suballerina3.png"/>
+			  <img id="suballerina4" src="images/suballerina4.png"/>
+			  <img id="suballerina5" src="images/suballerina5.png"/>
+			  <img id="suballerina6" src="images/suballerina6.png"/>
+			  <img id="suballerina7" src="images/suballerina7.png"/>
+			  <img id="suballerina8" src="images/suballerina8.png"/>
+			  <img id="ballerina1" src="images/ballerina1.png"/>
+			  <img id="ballerina2" src="images/ballerina2.png"/>
+			  <img id="ballerina3" src="images/ballerina3.png"/>
+			  <img id="ballerina4" src="images/ballerina4.png"/>
+			  <img id="ballerina5" src="images/ballerina5.png"/>
+			  <img id="ballerina6" src="images/ballerina6.png"/>
+			  <img id="ballerina7" src="images/ballerina7.png"/>
+			  <img id="ballerina8" src="images/ballerina8.png"/>
+			  <img id="spballerina1" src="images/spballerina1.png"/>
+			  <img id="spballerina2" src="images/spballerina2.png"/>
+			  <img id="spballerina3" src="images/spballerina3.png"/>
+			  <img id="spballerina4" src="images/spballerina4.png"/>
+			  <img id="spballerina5" src="images/spballerina5.png"/>
+			  <img id="spballerina6" src="images/spballerina6.png"/>
+			  <img id="spballerina7" src="images/spballerina7.png"/>
+			  <img id="spballerina8" src="images/spballerina8.png"/>
+			  <img id="aballerina1" src="images/aballerina1.png"/>
+			  <img id="aballerina2" src="images/aballerina2.png"/>
+			  <img id="aballerina3" src="images/aballerina3.png"/>
+			  <img id="aballerina4" src="images/aballerina4.png"/>
+			  <img id="aballerina5" src="images/aballerina5.png"/>
+			  <img id="aballerina6" src="images/aballerina6.png"/>
+			  <img id="aballerina7" src="images/aballerina7.png"/>
+			  <img id="aballerina8" src="images/aballerina8.png"/>
+			  <img id="prima" src="images/prima.png"/>
+			  <img id="springtexture" src="images/spring.jpg"/>
+    		<img id="summertexture" src="images/summer.jpg"/>
+    		<img id="autumntexture" src="images/autumn.jpg"/>
+    		<img id="wintertexture" src="images/winter.jpg"/>
+    		<img id="blackhole" src = "images/blackhole.png"/>
+    		<img src="images/springsky.jpg" id="springsky"/>
+    		<img src="images/summersky.jpg" id="summersky"/>
+    		<img src="images/autumnsky.jpg" id="autumnsky"/>
+    		<img src="images/wintersky.jpg" id="wintersky"/>
+
+
+			</a-assets>
+			
+			<a-sky id="theSky" src="#springsky" color="rgb(255,255,255)"></a-sky>
+			
+	    </a-scene>	
+  </body>
+</html>
